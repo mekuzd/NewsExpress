@@ -1,4 +1,5 @@
 body {
+  max-width: 100%;
   overflow-x: hidden;
   font-family: "Poppins", sans-serif;
 }
@@ -12,7 +13,9 @@ a:-webkit-any-link {
   color: black;
   cursor: pointer;
 }
-
+nav {
+  width: 100%;
+}
 a :hover {
   color: black;
   cursor: pointer;
@@ -23,6 +26,7 @@ a :hover {
   box-shadow: none !important;
 }
 .scroll {
+  max-width: 100%;
   z-index: 100;
   position: sticky;
   top: 0px;
@@ -41,13 +45,18 @@ a :hover {
 .registerbtn {
   padding: 10px;
   border-radius: 10px;
-  min-width: 100px;
+  min-width: 100%;
   background-color: transparent;
 }
 .registerbtn:hover {
   border-color: rgb(0, 0, 58);
   background-color: rgb(0, 0, 58);
   color: white;
+}
+.signin {
+  width: 150px;
+  padding: 10px;
+  border-radius: 10px;
 }
 .HomeFooter {
   height: 80px;

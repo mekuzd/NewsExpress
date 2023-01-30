@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { useContext } from "react";
 import Alert from "../Components/Alert";
 import DefaultLayout from "../Layouts/DefaultLayouts";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Context } from "../Provider/Context";
 
 const Signup = () => {
@@ -79,16 +79,34 @@ const Signup = () => {
 
   return (
     <DefaultLayout>
-      <main className="row justify-content-center px-1">
-        <div className="col-sm-5 mt-5">
-          <img src="" alt="" className="planeImg" />
+      <main className="row justify-content-center p-3">
+        <div
+          className=" mt-3 col-sm-4  m-auto rounded p-3"
+          style={{
+            // height: "400px",
+            backgroundColor: "rgb(0, 0, 58)",
+          }}
+        >
+          <h6 className="text-white">NE</h6>
+          <h1 className="text-center text-light fs-2 my-5">Welcome Back!</h1>
+          <p className="text-center text-light p-3">
+            To keep connected with us please Login with your personal info
+          </p>
+          <div className="text-center my-5">
+            <Link
+              to={"/login"}
+              className="text-center text-white  border signin"
+            >
+              Sign In
+            </Link>
+          </div>
         </div>
-        <div className="col-sm-5 d-flex mt-3   ">
-          {/* alertMessage  */}
 
+        {/* form */}
+        <div className="col-sm-5  mt-3   ">
           <form
             action=""
-            className={` shadow-lg  form-control m-auto p-3`}
+            className={` border-0  form-control  p-3`}
             style={{ width: "300px" }}
             onSubmit={handleSubmit}
           >
@@ -96,7 +114,7 @@ const Signup = () => {
               <Alert closeAlert={closeAlert} alertMessage={alertMessage} />
             )}
             {/* First NAme  */}
-            <div className="ms-4 ">
+            <div>
               <label htmlFor="firstname">First Name</label> <br />
               <input
                 ref={firstname}
@@ -109,7 +127,7 @@ const Signup = () => {
             </div>
             <br />
             {/* LastName  */}
-            <div className="ms-4">
+            <div>
               <label htmlFor="lastname">Last Name</label> <br />
               <input
                 required
@@ -121,7 +139,7 @@ const Signup = () => {
             </div>
             <br />
             {/* Email  */}
-            <div className="ms-4">
+            <div>
               <label htmlFor="email">Email</label> <br />
               <input
                 required
@@ -133,7 +151,7 @@ const Signup = () => {
             </div>{" "}
             <br />
             {/* password  */}
-            <div className="ms-4">
+            <div>
               <label htmlFor="password">Password</label> <br />
               <input
                 required
@@ -144,7 +162,7 @@ const Signup = () => {
               />
             </div>{" "}
             <br />
-            <p className="ms-4">Forgot Password?</p>
+            <p>Forgot Password?</p>
             <div className="text-center">
               <button type="submit" className="p-2 rounded registerbtn">
                 Register

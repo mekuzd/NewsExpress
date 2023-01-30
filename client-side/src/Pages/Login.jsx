@@ -70,7 +70,7 @@ const Login = () => {
               <Alert closeAlert={closeAlert} alertMessage={alertMessage} />
             )}
             {/* Email  */}
-            <div className="ms-4">
+            <div>
               <label htmlFor="email">Email</label> <br />
               <input
                 ref={email}
@@ -83,7 +83,7 @@ const Login = () => {
             </div>{" "}
             <br />
             {/* password  */}
-            <div className="ms-4">
+            <div>
               <label htmlFor="password">Password</label> <br />
               <div className=" position-relative ">
                 <input
