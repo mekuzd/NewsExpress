@@ -83,11 +83,11 @@ const Signup = () => {
         <div
           className=" mt-3 col-sm-4  m-auto rounded p-3"
           style={{
-            // height: "400px",
+            height: "450px",
             backgroundColor: "rgb(0, 0, 58)",
           }}
         >
-          <h6 className="text-white">NE</h6>
+          <h6 className="text-white fw-bold">NE</h6>
           <h1 className="text-center text-light fs-2 my-5">Welcome Back!</h1>
           <p className="text-center text-light p-3">
             To keep connected with us please Login with your personal info

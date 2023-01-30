@@ -42,7 +42,7 @@ const Navbar = () => {
     >
       {/* mobile navbar  */}
 
-      <Link to={"/"} className="fs-3 text-dark">
+      <Link to={"/"} className="fs-2 fw-bold text-dark">
         News Express
       </Link>
 
