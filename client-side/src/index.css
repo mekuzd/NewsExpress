@@ -1,70 +1,61 @@
-:root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+ul li {
+  list-style: none;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
+a:-webkit-any-link {
+  text-decoration: none;
+  color: black;
   cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+a :hover {
+  color: black;
+  cursor: pointer;
+}
+.form-control :focus {
+  outline: black !important;
+  border-color: black !important;
+  box-shadow: none !important;
+}
+.scroll {
+  z-index: 100;
+  position: sticky;
+  top: 0px;
+  background-color: white;
+}
+
+.scroll a {
+  transition: all 0.5s linear;
+  color: black;
+}
+.showPass {
+  position: absolute;
+  top: 0.01rem;
+  right: 1px;
+}
+.registerbtn {
+  padding: 10px;
+  border-radius: 10px;
+  min-width: 100px;
+  background-color: transparent;
+}
+.registerbtn:hover {
+  border-color: rgb(0, 0, 58);
+  background-color: rgb(0, 0, 58);
+  color: white;
+}
+.HomeFooter {
+  height: 80px;
+  border-left: 3px solid rgb(46, 27, 46);
+}
+footer p:hover {
+  color: rgb(3, 151, 250);
+}
+.footer {
+  height: 50px;
 }
