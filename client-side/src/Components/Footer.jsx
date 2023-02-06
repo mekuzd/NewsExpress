@@ -75,7 +75,10 @@ const Footer = () => {
       </footer>
       <footer>
         <div className="footer  d-flex shadow-lg ">
-          <p className="m-auto">© {date} MekuzAirline All rights reserved</p>
+          <p className="m-auto">
+            © {date} <span className="fw-bold">News Express</span> All rights
+            reserved
+          </p>
         </div>
       </footer>
     </>
